@@ -1,11 +1,22 @@
-from flask import Flask
+from flask import Flask, request, url_for, render_template, redirect
+import numpy as np
+import pickle 
 
 app = Flask(__name__)
 
+model = pickle.load(open('random_forest_model_1.pkl', 'rb'))
 
+# Home Route
 @app.route('/')
 def index():
-    return '<h1> Andre this is deployed!!! </h1>'
+    return render_template('index.html')
+
+
+@app.route('/predict', methods=['POST', 'GET'])
+def predict():
+    pass 
+
+
 
 
 if __name__ == '__main__':
