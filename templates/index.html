@@ -28,9 +28,9 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Fake Job Classifier </h1>
+      <h1 class="header center orange-text">Jobs Above 100k </h1>
       <div class="row center">
-        <h5 class="header col s12 light">Predict the probability of Job Being Fake
+        <h5 class="header col s12 light">Predict the probability of Job Being Over 100k
         <br>
         </h5>
       </div>
@@ -39,22 +39,22 @@
     <form action='/predict' method="post" class="col s12">
       <div class="row">
         <div class="input-field col s4">
-            <label for="first_name"><b>job_id</b></label>
+            <label for="first_name"><b>Company</b></label>
             <br>
-          <input placeholder="The Job ID" name="Temperature" id="first_name" type="text" class="validate">
+          <input placeholder="0=abc_pharm,1=FB,0=Google" name="Temperature" id="first_name" type="text" class="validate">
         </div>
       <div class="input-field col s4">
 
-          <label for="last_name"><b>title </b></label>
+          <label for="last_name"><b>Job </b></label>
             <br>
-          <input id="last_name" name="Oxygen" placeholder="title"  type="text" class="validate">
+          <input id="last_name" name="Oxygen" placeholder="manager=0, programmer=1,exec=2"  type="text" class="validate">
 
       </div>
 
       <div class="input-field col s4">
-            <label for="_name"><b>Humidity</b></label>
+            <label for="_name"><b>Degree</b></label>
             <br>
-          <input id="_name" name="Humidity" placeholder="Humidity %" type="text" class="validate">
+          <input id="_name" name="Humidity" placeholder="bach=0,mast=1" type="text" class="validate">
 
       </div>
 
